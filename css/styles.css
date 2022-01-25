@@ -111,9 +111,50 @@ h2 {
 .smallCaption p {
     font-size: 20px;
 }
-  
+#code .code-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#code .code-text:not(:last-child) {
+    margin-bottom: 25px;
+}
+.code-text p {
+    margin-right: 0px;
+}
 }
 
+
+
+.code-text a {
+    color: #fff;
+    font-family: Arial;
+    text-decoration: navajowhite;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #d34031;
+    border: 2px solid #d34031;
+    transition: all .5s ease-in-out;
+}
+.code-text p {
+    font-family: Arial;
+    margin-right: 30px;
+}
+.code-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#code {
+    margin-top: 60px;
+}
+.code-text a:hover {
+    background: transparent;
+}
+
+  
 @media only screen and (max-width: 700px) {
 body {
     max-width: 320px;
@@ -134,5 +175,8 @@ h2 {
 h3 {
     font-size: 18px;
     line-height: 26px;
+}
+.code-text p {
+    line-height: 22px;
 }
 }
